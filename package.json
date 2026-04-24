@@ -1,0 +1,17 @@
+{
+  "name": "ai-learning-companion",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev:client": "npm --prefix knowledge-engine/client run dev",
+    "dev:server": "npm --prefix knowledge-engine/server run dev",
+    "build:client": "npm --prefix knowledge-engine/client run build",
+    "start:server": "npm --prefix knowledge-engine/server run start"
+  },
+  "dependencies": {
+    "@google/genai": "^1.30.0",
+    "dotenv": "^16.6.1",
+    "pdf-parse": "^1.1.1"
+  }
+}

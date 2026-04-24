@@ -1,0 +1,73 @@
+.graph-page {
+  min-height: calc(100vh - 80px);
+  padding: 2.2rem 1.5rem 3rem;
+}
+
+.graph-header {
+  max-width: 1100px;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.graph-header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #102a34;
+}
+
+.graph-header p {
+  margin: 0 auto;
+  max-width: 760px;
+  color: #48626c;
+  font-size: 1.05rem;
+}
+
+.graph-container {
+  max-width: 1400px;
+  margin: 1.5rem auto;
+  min-height: 720px;
+}
+
+.graph-info {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.4rem;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 18px 40px rgba(16, 42, 52, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.88);
+}
+
+.info-card h3 {
+  color: #102a34;
+  margin: 0 0 1rem;
+  font-size: 1.15rem;
+}
+
+.info-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.9rem;
+}
+
+.info-card li {
+  padding: 1rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.76), rgba(234, 244, 244, 0.9));
+  border-radius: 18px;
+  color: #304b55;
+}
+
+@media (max-width: 720px) {
+  .graph-page {
+    padding: 1.4rem 1rem 2rem;
+  }
+
+  .graph-container {
+    min-height: 560px;
+  }
+}
